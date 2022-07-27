@@ -1,0 +1,153 @@
+:root{
+  --moderate-violet : hsl(263, 55%, 52%);
+  --grayist-blue : hsl(217, 19%, 35%);
+  --blackish-blue : hsl(219, 29%, 14%);
+  --light-gray : hsl(0, 0%, 81%);
+  --light-grayish-blue : hsl(210, 46%, 95%);
+}
+
+/* body{
+  overflow-x: hidden;
+} */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+p{
+  font-size: 13px;
+}
+
+.testimonials{
+  margin: 3%;
+  display: flex;
+  gap: 20px;
+  width: 1200px;
+}
+
+.container{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-grayish-blue);
+}
+
+.testimonial{
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--light-grayish-blue);
+}
+
+.testimonial-avatar{
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--light-gray);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.testimonial-avatar img{
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.testimonial-header{
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-header__identity{
+  display: flex;
+  flex-direction: column;
+}
+
+.identity__name{
+  font-weight: 500;
+}
+
+.identity__title{
+  opacity: .5;
+  font-size: 14px;
+}
+
+.testimonial-title{
+  font-weight: 600;
+  line-height: 1em;
+}
+
+.testimonial-description{
+  line-height: 1.5em;
+  opacity: .7;
+}
+
+.daniel{
+  background-color: var(--moderate-violet);
+}
+
+.jonathan{
+  background-color: var(--grayist-blue);
+}
+
+.jeanette{
+  background-color: white;
+  color: var(--blackish-blue);
+}
+
+.patrick{
+  background-color: var(--blackish-blue);
+}
+
+.kira{
+  background-color: white;
+  color: var(--blackish-blue);
+  width: 25%;
+}
+
+.left-side{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  width: 75%;
+}
+
+.left-side__top-section{
+  gap: 20px;
+  display: flex;
+}
+
+.left-side__bottom-section{
+  gap: 20px;
+  display: flex;
+}
+
+@media only screen and (max-width: 830px) {
+  .testimonials{
+    flex-direction: column;
+  }
+
+  .left-side{
+    width: 100%;
+  }
+
+  .kira{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  .left-side__top-section{
+    flex-direction: column;
+  }
+
+  .left-side__bottom-section{
+    flex-direction: column;
+  }
+}
