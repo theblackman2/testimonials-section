@@ -24,7 +24,7 @@ p{
 .testimonials{
   margin: 3%;
   display: flex;
-  gap: 20px;
+  gap: 15px;
   width: 1200px;
 }
 
@@ -43,6 +43,7 @@ p{
   flex-direction: column;
   gap: 10px;
   color: var(--light-grayish-blue);
+  box-shadow: 2px 2px 15px 1px var(--light-gray);
 }
 
 .testimonial-avatar{
@@ -90,6 +91,14 @@ p{
 
 .daniel{
   background-color: var(--moderate-violet);
+  position: relative;
+}
+
+.quotation{
+  position: absolute;
+  top: 0;
+  right: 15%;
+  opacity: .2;
 }
 
 .jonathan{
@@ -113,18 +122,18 @@ p{
 
 .left-side{
   display: flex;
-  gap: 20px;
+  gap: 15px;
   flex-direction: column;
   width: 75%;
 }
 
 .left-side__top-section{
-  gap: 20px;
+  gap: 15px;
   display: flex;
 }
 
 .left-side__bottom-section{
-  gap: 20px;
+  gap: 15px;
   display: flex;
 }
 
